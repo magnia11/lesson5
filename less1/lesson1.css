@@ -1,0 +1,63 @@
+.wrapper {
+  padding: 10px 0 0 10px;
+}
+
+.modal {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    background: #ccc;
+    color: #767676c4;
+    font-weight: 900;
+    padding: 2em;
+    transform: translateX(-1000%);
+    z-index: 999;
+}
+
+.modal.open {
+    transform: translateX(-50%);
+  width: 40px;
+  height: 15px;
+  background-color: #fffdfd;
+  border-radius: 30%;
+  animation: shadow 1s infinite alternate;
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 0 0 10px 10px mediumpurple;
+  }
+  to {
+    box-shadow: 0 0 20px 10px mediumpurple;
+  }
+}
+
+.btn {
+    padding: 15px 40px;
+    display: inline-block;
+    background: Ivory;
+    color: mediumpurple;
+    border: 2px solid mediumpurple;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 800;
+    outline: none;
+}
+
+.btn:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    outline: none;
+}
+
+.btn:active {
+    color: whitesmoke;
+    background: mediumpurple;
+    outline: none;
+    transform: scale(1.0);
+}
+
+.btn:checked {
+    color: whitesmoke;
+    background: mediumpurple;
+}
